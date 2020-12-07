@@ -2,12 +2,13 @@
 {
     abstract class BaseClass
     {
-        private readonly string name;
 
         public BaseClass(string Name)
         {
             name = Name;
         }
+        public string name { get; }
+
         public abstract string NameMetodas();
 
         public abstract int NameMetodas(int a);
