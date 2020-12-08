@@ -19,8 +19,9 @@
         {
             Zodis = zodis;
         }
-        public CKlase(int skaicius, string zodis, AKlase aObjektas) : this(skaicius, zodis)
+        public CKlase(int skaicius, string zodis, double doubleSkaicius, AKlase aObjektas) : this(skaicius, zodis)
         {
+            DoubleSkaicius = doubleSkaicius;
             AObjektas = aObjektas;
         }
     }
