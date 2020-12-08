@@ -8,6 +8,11 @@ namespace MedziagosKartojimas
     {
         public BKlase(string name) : base(name)
         {
+
+        }
+        public BKlase()
+        {
+
         }
         public List<char> Balses = new List<char> { 'a', 'e', 'i', 'o', 'u' };
 
@@ -29,10 +34,9 @@ namespace MedziagosKartojimas
         public string ZodisBeBalsiu()
         {
             StringBuilder sb = new StringBuilder();
-
             foreach (var letter in Name)
             {
-                sb.Append(Balses.Contains(letter) ?  "" : letter.ToString());
+                if (Balses.Contains(letter)) sb.Append(letter);
             }
             return sb.ToString();
         }
@@ -43,8 +47,9 @@ namespace MedziagosKartojimas
 
             foreach (var letter in Name)
             {
-                sb.Append(Balses.Contains(letter) ? letter.ToString() : "");
+                if (!Balses.Contains(letter)) sb.Append(letter);
             }
+
             return sb.ToString();
         }
 

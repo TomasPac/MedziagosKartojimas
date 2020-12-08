@@ -7,23 +7,21 @@
         public string Zodis { get; set; }
         public double DoubleSkaicius { get; set; }
         public AKlase AObjektas { get; set; }
-        public CKlase(string name) : base(name)
+        public CKlase() 
         {
 
         }
-        public CKlase(string name, int skaicius) :base(name)
+        public CKlase(int skaicius)
         {
             Skaicius = skaicius;
         }
-        public CKlase(string name, int skaicius, string zodis) : base(name)
+        public CKlase(int skaicius, string zodis)
         {
             Skaicius = skaicius;
             Zodis = zodis;
         }
-        public CKlase(string name, int skaicius, string zodis, AKlase aObjektas) : base(name)
+        public CKlase(int skaicius, string zodis, AKlase aObjektas) : this(skaicius, zodis)
         {
-            Skaicius = skaicius;
-            Zodis = zodis;
             AObjektas = aObjektas;
         }
     }

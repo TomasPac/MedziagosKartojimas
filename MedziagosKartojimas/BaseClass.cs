@@ -7,6 +7,10 @@
         {
             Name = name;
         }
+        public BaseClass()
+        {
+
+        }
         public string Name { get; }
 
         public abstract string NameMetodas();
