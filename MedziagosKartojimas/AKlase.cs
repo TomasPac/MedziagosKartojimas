@@ -29,7 +29,7 @@ namespace MedziagosKartojimas
             int res = 0;
             foreach (var letter in Name)
             {
-                res += Convert.ToInt32(letter) * 2;
+                res += Convert.ToInt32(letter) * a;
             }
             return res;
         }
