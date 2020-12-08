@@ -26,7 +26,12 @@ namespace MedziagosKartojimas
 
         public override int NameMetodas(int a)
         {
-            throw new System.NotImplementedException();
+            int res = 0;
+            foreach (var letter in Name)
+            {
+                res += Convert.ToInt32(letter) * 2;
+            }
+            return res;
         }
     }
 }
