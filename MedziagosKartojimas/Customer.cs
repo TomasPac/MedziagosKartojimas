@@ -9,7 +9,7 @@ namespace MedziagosKartojimas
         public double Balance { get; set; }
         public string Bank { get; set; }
 
-        List<Customer> customers = new List<Customer>() {
+        public List<Customer> customers = new List<Customer>() {
                 new Customer(){ Name="Bob Lesman", Balance=80345.66, Bank="FTB"},
                 new Customer(){ Name="Joe Landy", Balance=9284756.21, Bank="WF"},
                 new Customer(){ Name="Meg Ford", Balance=487233.01, Bank="BOA"},
@@ -24,10 +24,9 @@ namespace MedziagosKartojimas
 
         public List<string> GetMillionaires()
         {
-            var millionaires = new List<string>();
-
-
+            var millionaires = customers.Where(c => c.Balance >= 1000000).Select(c => c.Name).ToList();
             return millionaires;
         }
+
     }
 }
