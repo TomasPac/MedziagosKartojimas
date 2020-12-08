@@ -15,9 +15,8 @@
         {
             Skaicius = skaicius;
         }
-        public CKlase(int skaicius, string zodis)
+        public CKlase(int skaicius, string zodis) :this(skaicius)
         {
-            Skaicius = skaicius;
             Zodis = zodis;
         }
         public CKlase(int skaicius, string zodis, AKlase aObjektas) : this(skaicius, zodis)
