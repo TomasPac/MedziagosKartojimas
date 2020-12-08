@@ -1,13 +1,13 @@
 ﻿namespace MedziagosKartojimas
 {
-    abstract class BaseClass
+    public abstract class BaseClass
     {
 
-        public BaseClass(string Name)
+        public BaseClass(string name)
         {
-            name = Name;
+            Name = name;
         }
-        public string name { get; }
+        public string Name { get; }
 
         public abstract string NameMetodas();
 
