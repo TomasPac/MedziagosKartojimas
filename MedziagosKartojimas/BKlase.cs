@@ -65,7 +65,7 @@ namespace MedziagosKartojimas
 
             foreach (var letter in Name)
             {
-                sb.Append(Balses.Contains(letter) ? letter : (char)a);
+                sb.Append(Balses.Contains(letter) ? letter.ToString() : a.ToString());
             }
             return sb.ToString();
         }
